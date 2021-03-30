@@ -1,0 +1,21 @@
+[20-Jul-2020 21:41:44 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home1/verlierinfo/public_html/start/index.php on line 201
+[20-Jul-2020 22:01:02 America/Chicago] PHP Fatal error:  An iterator cannot be used with foreach by reference in /home1/verlierinfo/public_html/start/index.php on line 200
+[20-Jul-2020 22:13:42 America/Chicago] PHP Warning:  simplexml_load_file(): http://fabulaser.com/mirror/test.xml:27: parser error : Extra content at the end of the document in /home1/verlierinfo/public_html/start/index.php on line 15
+[20-Jul-2020 22:13:42 America/Chicago] PHP Warning:  simplexml_load_file(): XML; in /home1/verlierinfo/public_html/start/index.php on line 15
+[20-Jul-2020 22:13:42 America/Chicago] PHP Warning:  simplexml_load_file(): ^ in /home1/verlierinfo/public_html/start/index.php on line 15
+[20-Jul-2020 22:14:03 America/Chicago] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 3: parser error : Start tag expected, '&lt;' not found in /home1/verlierinfo/public_html/start/index.php on line 19
+[20-Jul-2020 22:14:03 America/Chicago] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in /home1/verlierinfo/public_html/start/index.php:19
+Stack trace:
+#0 /home1/verlierinfo/public_html/start/index.php(19): SimpleXMLElement->__construct('\n \n')
+#1 {main}
+  thrown in /home1/verlierinfo/public_html/start/index.php on line 19
+[20-Jul-2020 22:14:26 America/Chicago] PHP Warning:  simplexml_load_file(): http://fabulaser.com/mirror/test.xml:1: parser error : Document is empty in /home1/verlierinfo/public_html/start/index.php on line 15
+[20-Jul-2020 22:14:31 America/Chicago] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 3: parser error : Start tag expected, '&lt;' not found in /home1/verlierinfo/public_html/start/index.php on line 19
+[20-Jul-2020 22:14:31 America/Chicago] PHP Fatal error:  Uncaught Exception: String could not be parsed as XML in /home1/verlierinfo/public_html/start/index.php:19
+Stack trace:
+#0 /home1/verlierinfo/public_html/start/index.php(19): SimpleXMLElement->__construct('\n \n')
+#1 {main}
+  thrown in /home1/verlierinfo/public_html/start/index.php on line 19
+[23-Jul-2020 01:14:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/verlierinfo/public_html/start/testxml.php on line 19
+[23-Jul-2020 01:15:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/verlierinfo/public_html/start/testxml.php on line 19
+[23-Jul-2020 01:15:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home1/verlierinfo/public_html/start/testxml.php on line 19

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DigitalDust';
+    src: url('fonts/DigitalDust.eot');
+    src: url('fonts/DigitalDust.eot') format('embedded-opentype'),
+         url('fonts/DigitalDust.woff2') format('woff2'),
+         url('fonts/DigitalDust.woff') format('woff'),
+         url('fonts/DigitalDust.ttf') format('truetype'),
+         url('fonts/DigitalDust.svg#DigitalDust') format('svg');
+}
