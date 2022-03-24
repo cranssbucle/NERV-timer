@@ -1,6 +1,8 @@
 // Init Global Vars
 
 let nervClock;
+let hourlyRefresh;
+let init;
 
 // Classes
 class Timer {
@@ -11,12 +13,20 @@ class Timer {
             hours = (hours < 10 ? '0' : '') + hours;
             let minutes = (currentDate.getMinutes() < 10 ? '0' : '') + currentDate.getMinutes();
             let seconds = (currentDate.getSeconds() < 10 ? '0' : '') + currentDate.getSeconds();
-            let time = hours+':'+minutes+':'+seconds;
+            let getId = function(part) {
+                return document.getElementById(part);
+            }
+            let theTime = `${hours}:${minutes}:${seconds}`; // Checking the format
             //console.log(time);
             if (!this.paused) {
-                document.getElementById("clockHour").innerText = hours;
-                document.getElementById("clockMinute").innerText = minutes;
-                document.getElementById("clockSecond").innerText = seconds;
+                if (hourlyRefresh !== hours) { // Check if a hour passed, if it did, we set a refresh
+                    hourlyRefresh = hours;
+                    init();
+                    console.log(theTime);
+                }
+                getId("clockHour").innerText = hours;
+                getId("clockMinute").innerText = minutes;
+                getId("clockSecond").innerText = seconds;
             }
         }, 1000);
         this.paused = false;
@@ -82,13 +92,16 @@ class GUI extends Timer{
         wrapper.className = '';
         wrapper.classList.add(level);
         timeSession.src = `src/${meridian}-img.png`;
-        console.log(this.checkTime());
     }
 
 }
 
 // Initialized after window loaded
 window.onload = function() {
-    nervClock = new GUI();
-    nervClock.drawClock(nervClock.checkTime('level'),nervClock.checkTime('meridian'));
+    init = function() {
+        nervClock = new GUI();
+        nervClock.drawClock(nervClock.checkTime('level'),nervClock.checkTime('meridian'));
+    }
+
+    init();
 }
