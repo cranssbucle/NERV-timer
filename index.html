@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verlier Startup System</title>
+  <title>NERV </title>
   <link rel="stylesheet" href="style.css">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="black">
+  <meta name="apple-mobile-web-app-title" content="NERV Timer">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <div style="color:#fff">
-    <?php /*
+    <!-- <?php /*
     echo 'Hola <br>';
     $file = 'http://fabulaser.com/mirror/test.xml';
     if(!$xml = simplexml_load_file($file))
@@ -20,10 +42,10 @@
       echo $personaje->nombre, ' interpretado por ', $personaje->actor, PHP_EOL . '<br>';
     }
     */
-    ?>
+    ?> -->
   </div>
-
- <div id="framing">
+  
+  <div id="framing">
     <div id="wrapper">
       <div id="bigClock" class="mainColor" class="clock" onload="showTime()">
         <img class="clocktitleimg" src="src/clock-title.png" alt="">
@@ -210,51 +232,49 @@
       </svg>
       <div class="newsticker news1 js-newsticker">
         <!-- https://xchile.cl/?cat=147&feed=rss2 -->
-        <ul class="js-frame">
+        
+        <!-- <ul class="js-frame">
           <?php  $feed = simplexml_load_file('https://xchile.cl/?feed=rss2');
           foreach ($feed->channel->item as $item) {   $title       = (string) $item->title;
-              $description = (string) $item->description;
-              $link = (string) $item->link;
-                print '<li class="js-item">';
-                printf(     '<a href="%s" target="_blank">%s</a>',      $link,$title   );
-                echo '</li>';
-          }
-          ?>
-        </ul>
-      </div>
-      <div class="newsticker news2 js-newsticker">
-        <ul class="js-frame">
-          <?php   $feed = simplexml_load_file('https://xchile.cl/?feed=rss2');
-
-          foreach ($feed->channel->item as $item) {    $title       = (string) $item->title;
-              $description = (string) $item->description;
-              $link = (string) $item->link;
-                print '<li class="js-item">';
-                printf(      '<a href="%s" target="_blank">%s</a>',       $link,$title    );
-                echo '</li>';
-            }?></ul>
+            $description = (string) $item->description;
+            $link = (string) $item->link;
+            print '<li class="js-item">';
+              printf(     '<a href="%s" target="_blank">%s</a>',      $link,$title   );
+              echo '</li>';
+            }
+            ?>
+          </ul> -->
         </div>
-        <div class="newsticker news3 js-newsticker">
-          <ul class="js-frame">
+        <div class="newsticker news2 js-newsticker">
+          <!-- <ul class="js-frame">
             <?php   $feed = simplexml_load_file('https://xchile.cl/?feed=rss2');
             
             foreach ($feed->channel->item as $item) {    $title       = (string) $item->title;
-                $description = (string) $item->description;
-                $link = (string) $item->link;
+              $description = (string) $item->description;
+              $link = (string) $item->link;
+              print '<li class="js-item">';
+                printf(      '<a href="%s" target="_blank">%s</a>',       $link,$title    );
+                echo '</li>';
+              }?>
+            </ul> -->
+            </div>
+            <div class="newsticker news3 js-newsticker">
+              <!-- <ul class="js-frame">
+                <?php   $feed = simplexml_load_file('https://xchile.cl/?feed=rss2');
+                
+                foreach ($feed->channel->item as $item) {    $title       = (string) $item->title;
+                  $description = (string) $item->description;
+                  $link = (string) $item->link;
                   print '<li class="js-item">';
-                  printf(      '<a href="%s" target="_blank">%s</a>',       $link,$title    );
-                  echo '</li>';
-              }?></ul>
-          </div>
-        </div>
-
-
-
-    
-    
-    </div
-      </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script src="newsticker.js"></script>
-    </html>
+                    printf(      '<a href="%s" target="_blank">%s</a>',       $link,$title    );
+                    echo '</li>';
+                  }?></ul> -->
+                </div>
+              </div>
+              
+            </div>
+          </body>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="main.js"></script>
+          <script src="newsticker.js"></script>
+          </html>
