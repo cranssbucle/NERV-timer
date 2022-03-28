@@ -44,16 +44,16 @@
     */
     ?> -->
   </div>
-  
+  <div style="position:absolute; z-index:9999; background: black; color:white;font-size:40px;" id="pichula"></div>
   <div id="framing">
     <div id="wrapper">
       <div id="bigClock" class="mainColor" class="clock" onload="showTime()">
         <img class="clocktitleimg" src="src/clock-title.png" alt="">
-        <span id="clockHour"></span>
+        <span id="clockHour">88</span>
         <span class="clockSeparator minute">:</span>
-        <span id="clockMinute"></span>
+        <span id="clockMinute">88</span>
         <span class="clockSeparator seconds">:</span>
-        <span id="clockSecond"></span>
+        <span id="clockSecond">88</span>
       </div>
       <div id="session">
         <img id="timeSession" src="" alt="">
@@ -275,6 +275,8 @@
             </div>
           </body>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="classes.js"></script>
+          <script src="init.js"></script>
           <script src="main.js"></script>
           <script src="newsticker.js"></script>
           </html>
