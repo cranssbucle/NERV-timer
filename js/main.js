@@ -5,6 +5,8 @@ const startCountdown = document.getElementById('start-count');
 const reset = document.getElementById('reset');
 const beast = document.getElementById('beast');
 const clock = document.getElementById('bigClock');
+
+
 const resetButtons = function(){
     shutdownAnimation(false);
     tickingsecs.play();

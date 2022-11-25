@@ -258,6 +258,11 @@ class drawClock {
         
     }
     draw(h, m, s, ms) {
+        // console.log(parseInt(h)+parseInt(m)+parseInt(s));
+        if (parseInt(h)+parseInt(m)+parseInt(s) == 0) {
+            alarm.play();
+        }
+
         let level;
         let duration = nervCron.duration;
         
@@ -287,11 +292,15 @@ class drawClock {
             }
             // console.log(rndrate,thisHour);
             tickingsecs.rate(rndrate);
-            tickingsecs.play();
+            // tickingsecs.play();
+            dateTXT.innerText = theDate();
+            console.log('Datetxt:', dateTXT.innerText);
+            console.log('Date:', theDate());
+
         }
         if (getId("clockHour").innerText !== h) {
             // console.log('pong',h);
-            alarm.play();
+            tickingsecs.play();
         }
         if (nervClock.active && !nervCron.active) {
             level = parseInt((new Date().getHours() / 24)*100);

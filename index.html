@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NERV </title>
+  <title>NERV Timer</title>
   <link rel="stylesheet" href="style.css">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,6 +27,16 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74778124-18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74778124-18');
+</script>
+
 </head>
 <body id="nervClockBody">
   <div style="color:#fff">
@@ -229,6 +239,8 @@
             <text class="cls-5" transform="translate(397.66 240.25) scale(0.94 1)"><tspan class="cls-6">o</tspan><tspan class="cls-7" x="4.07" y="0">v</tspan><tspan x="7.6" y="0">e</tspan><tspan class="cls-8" x="11.36" y="0">r</tspan><tspan x="14.04" y="0">fl</tspan><tspan class="cls-9" x="17.97" y="0">o</tspan><tspan class="cls-10" x="22.04" y="0">w</tspan><tspan x="27.74" y="0">: hidden</tspan></text>
           </g>
         </svg>
+        
+        <div id="date">DATE</div>
         <span class="audio_control"><img src="images/audio-on.svg" alt="Audio Control"/></span>
           </body>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
