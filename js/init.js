@@ -26,7 +26,8 @@ function theDate(){
     let mm = String(today.getMonth()).padStart(2, '0'); //January is 0!
     let yyyy = today.getFullYear();
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    today = monthNames[mm] + ' ' + dd + ', ' + yyyy;
+    today = monthNames[parseInt(mm)] + ' ' + dd + ', ' + yyyy;
+    console.log(mm)
     return today;
 }
 const dateTXT = document.getElementById('date');
